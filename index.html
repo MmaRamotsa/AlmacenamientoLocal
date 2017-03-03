@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo de Local Storage</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/control.js"></script>
+</head>
+<body onload="RellenarDatosIniciales1();">
+	<header class=".container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Registro</h1>
+			</div>
+		</div>
+	</header>
+	<hr>
+	<section class="container">
+		<article class="row">
+			<div class="col-md-2">
+				<label for="nombre">Nombre:</label>
+			</div>
+			<div class="col-md-10">
+				<input type="text" id="nombre" class="form-control">
+			</div>
+		</article>
+		<article class="row">
+			<div class="col-md-2">
+				<label for="idmujer">Mujer</label> <input type="radio" name="sexo" id="idmujer" value="mujer">
+				<label for="idhombre">Hombre</label> <input type="radio" name="sexo" id="idhombre" value="hombre">
+			</div>
+		</article>
+		<article class="row">
+			<div class="col-md-2">
+				<label for="idciudad">Ciudad: </label>
+			</div>
+			<div class="col-md-10">
+				<input type="text" id="idciudad" name="ciudad" class="form-control">
+			</div>
+		</article>
+		<article class="row">
+			<div class="col-md-2">
+				<label for="idprov">Provincia </label>
+			</div>
+			<div class="col-md-10">
+				<select name="provincia" id="idprov" class="form-control">
+					<option value='0'>(Seleccionar)</option>
+					<option value='2'>Álava</option>
+					<option value='3'>Albacete</option>
+					<option value='4'>Alicante/Alacant</option>
+					<option value='5'>Almería</option>
+					<option value='6'>Asturias</option>
+					<option value='7'>Ávila</option>
+					<option value='8'>Badajoz</option>
+					<option value='9'>Barcelona</option>
+					<option value='10'>Burgos</option>
+					<option value='11'>Cáceres</option>
+					<option value='12'>Cádiz</option>
+					<option value='13'>Cantabria</option>
+					<option value='14'>Castellón/Castelló</option>
+					<option value='15'>Ceuta</option>
+					<option value='16'>Ciudad Real</option>
+					<option value='17'>Córdoba</option>
+					<option value='18'>Cuenca</option>
+					<option value='19'>Girona</option>
+					<option value='20'>Las Palmas</option>
+					<option value='21'>Granada</option>
+					<option value='22'>Guadalajara</option>
+					<option value='23'>Guipúzcoa</option>
+					<option value='24'>Huelva</option>
+					<option value='25'>Huesca</option>
+					<option value='26'>Illes Balears</option>
+					<option value='27'>Jaén</option>
+					<option value='28'>A Coruña</option>
+					<option value='29'>La Rioja</option>
+					<option value='30'>León</option>
+					<option value='31'>Lleida</option>
+					<option value='32'>Lugo</option>
+					<option value='33'>Madrid</option>
+					<option value='34'>Málaga</option>
+					<option value='35'>Melilla</option>
+					<option value='36'>Murcia</option>
+					<option value='37'>Navarra</option>
+					<option value='38'>Ourense</option>
+					<option value='39'>Palencia</option>
+					<option value='40'>Pontevedra</option>
+					<option value='41'>Salamanca</option>
+					<option value='42'>Segovia</option>
+					<option value='43'>Sevilla</option>
+					<option value='44'>Soria</option>
+					<option value='45'>Tarragona</option>
+					<option value='46'>Santa Cruz de Tenerife</option>
+					<option value='47'>Teruel</option>
+					<option value='48'>Toledo</option>
+					<option value='49'>Valencia/Valéncia</option>
+					<option value='50'>Valladolid</option>
+					<option value='51'>Vizcaya</option>
+					<option value='52'>Zamora</option>
+					<option value='53'>Zaragoza</option>
+				</select>
+			</div>
+		</article>
+	</section>
+	<footer class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<input type="button" class="btn btn-warning" onclick="LimpiarDatos();" value="Limpiar datos">
+				<input type="button" class="btn btn-primary" onclick="Siguiente();" value="Siguiente">
+		</div>
+		</div>
+	</footer>
+</body>
+</html>

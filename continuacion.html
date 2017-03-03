@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/control.js"></script>
+</head>
+<body onload="RellenarDatosIniciales2();">
+	<header class=".container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Registro <small>(continuación)</small></h1>
+			</div>
+		</div>
+	</header>
+	<hr>
+	<section class="container">
+	<form name="formulario" id="form1" action="procesa.php" method="post" >
+		<article class="row">
+			<div class="col-md-2">
+				<label for="email">Correo electrónico:</label>
+			</div>
+			<div class="col-md-10">
+				<input type="email" name="email" id="email" class="form-control">
+			</div>
+		</article>
+	</section>
+
+	<input type="hidden" name="nombre" id="idnombre" value="">
+	<input type="hidden" name="sexo" id="idsexo" value="">
+	<input type="hidden" name="ciudad" id="idciudad" value="">
+	<input type="hidden" name="provincia" id="idprovincia" value="">
+	</form>
+	<footer class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<input type="button" class="btn btn-primary" onclick="Anterior();" value="Anterior">
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
